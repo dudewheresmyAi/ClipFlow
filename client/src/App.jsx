@@ -15,7 +15,7 @@ function App() {
     const transcript = "Hello everyone and welcome to my channel. Today we are going to talk about the science of a perfect cup of coffee. Many people think you need expensive equipment, but that is a complete myth. The real secret is actually the water temperature, it should be precisely 200 degrees Fahrenheit. Any hotter and you burn the grounds, any cooler and you don't extract enough flavor. Let's dive into why that is. Later on, I'll also show you my favorite beans.";
 
     try {
-      const response = await fetch('/api/get-clips', {
+      const response = await fetch('https://a7526879-bd54-4b86-84fb-afb2601bf33a-00-37ohl6qrqcpf2.pike.replit.dev/api/get-clips', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ transcript: transcript })
